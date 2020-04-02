@@ -42,7 +42,13 @@ INSTALLED_APPS = [
     #own
     'SneakerBot',  #staic files, base templates;
     'homepage',     # homepage stuff;
-    'store',        # store stuff
+    'store',        # store stuff;
+    'users',        # login, logout, dashboard, register, etc stuff ;
+    'crispy_forms', # crispy form's, so they dont look like trash
+    #'login.apps.LoginConfig',             # not sure if necessary for loginConfig class
+    #'materialize',  # materialize / toast notifications;
+    'pylint_django', #pylint 
+    'NikeBotBackend', # Backend browser automation code
 ]
 
 MIDDLEWARE = [
@@ -56,6 +62,8 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'SneakerBot.urls'
+
+
 
 TEMPLATES = [
     {
@@ -105,6 +113,8 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+#Login Redirect
+LOGIN_REDIRECT_URL = 'dashboard'
 
 # Internationalization
 # https://docs.djangoproject.com/en/3.0/topics/i18n/
@@ -123,4 +133,20 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
+#STIC
 STATIC_URL = '/static/'
+
+#MEDIA
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_URL = '/media/'
+
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
+
+
+#PyLint
+{
+    "python.linting.pylintArgs": [
+        "--load-plugins",
+        "pylint_django"
+    ]
+}

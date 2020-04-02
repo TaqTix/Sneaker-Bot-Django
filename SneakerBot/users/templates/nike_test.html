@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+
+{% block title %}
+    Nike_Test
+{% endblock %}
+
+{% block css %}
+    <link rel="stylesheet" href="{% static 'web/css/content.css' %}">
+{% endblock %}
+
+{% block content %}
+
+{% endblock %}
+
+{% block body %}
+    <div class="jumbotron jumbotron-fluid">
+        <h1 class="display-4">Sneaker Bot Nike_Test Page</h1>
+        <p class="lead">Hello {{ user.username|capfirst }}!</p>
+        <hr class="my-4">
+        <p>Please Submit Your User Profiles</p>
+        <form method="POST" enctype="multipart/form-data"> <!-- enctype is for image's -->
+            {% csrf_token %}
+            <fieldset class="form-group">
+                <legend class="border-bottom mb-4">Profile Info</legend>
+                {{ u_form|crispy }}
+                {{ p_form|crispy }}
+            </fieldset>
+            <div class="form-group"><button class="btn btn-outline-info" type="submit">Update</button></div>
+
+        </form>
+    </div>
+{% endblock %}

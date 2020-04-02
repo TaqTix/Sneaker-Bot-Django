@@ -1,12 +1,11 @@
 .jumbotron-fluid {
-    display: block;
     margin-left: auto;
     margin-right: auto;
     margin-top: 40px;
     width: 80%;
     text-align: center;
     align-content: center;
-    align-items: center;
+    
 }
 
 .post > p, .post > h1 {
@@ -28,10 +27,81 @@
     align-items: center;
 }
 
+.form-group{
+    background-color: blue solid;
+}
+
 html {
     background-color: rgb(58, 53, 53);
 }
 
 body {
     padding-bottom: 40px;
+}
+
+#id_username{
+    width: 300px;
+    text-align: center;
+    align-content: center;
+    float: center;
+    margin: auto;
+}
+
+#id_email{
+    width: 300px;
+    margin: auto; /* centered email input field on register page */
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    float: center;
+    margin: auto;
+}
+
+#id_password{
+    width: 300px;
+    text-align: center;
+    align-content: center;
+    float: center;
+    margin: auto;
+}
+#id_password1{
+    width: 300px;
+    text-align: center;
+    align-content: center;
+    float: center;
+    margin: auto;
+}
+#id_password2{
+    width: 300px;
+    text-align: center;
+    align-content: center;
+    float: center;
+    margin: auto;
+}
+
+#id_receive_email_specials{
+    text-align: center;
+    align-content: center;
+    float: center;
+    margin: auto;
+}
+
+/* #id_username label {
+    float: left;
+    margin: 1x;
+} */
+
+.textinput {
+    margin: auto; /* auto centers most input fields (except email) */
+}
+
+
+
+
+.content-section{
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    background-color: blue solid;
 }
