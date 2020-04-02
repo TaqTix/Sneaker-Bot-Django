@@ -262,8 +262,8 @@ class NikeBot:
 #     url3 = 'https://www.nike.com/launch/t/pg-4-gatorade-gx/'
 #     url4 = 'https://www.nike.com/launch/t/air-jordan-1-high-black-gym-red/'
 #     size = 'M 10'
-#     login_username = 'acrypto91@gmail.com'
-#     login_temp_pass = 'Charlie123!'
+#     login_username = 'removed_for_security'
+#     login_temp_pass = 'removed_for_security'
 #     #test1= NikeBot(url1, size, login_username, login_temp_pass, True )
 #     # test2= NikeBot(url2, size, login_username, login_temp_pass )
 #     test3= NikeBot(url3, 'M 7.5', login_username, login_temp_pass, True )
